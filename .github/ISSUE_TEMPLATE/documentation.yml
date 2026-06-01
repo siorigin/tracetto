@@ -1,0 +1,60 @@
+name: "Documentation / 文档问题"
+description: "Report unclear, incorrect, or missing documentation. / 反馈文档不清楚、不准确或缺失的问题。"
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the Tracetto documentation.
+
+        感谢你帮助改进 Tracetto 文档。
+
+  - type: input
+    id: location
+    attributes:
+      label: "Documentation location / 文档位置"
+      description: "Link, file path, section title, or screenshot location. / 链接、文件路径、章节标题或截图位置。"
+      placeholder: "Example: en/quickstart.md, zh-CN/reference.md, README.md"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: "Issue type / 问题类型"
+      options:
+        - "Incorrect information / 信息错误"
+        - "Unclear wording / 表达不清楚"
+        - "Missing content / 内容缺失"
+        - "Broken link or image / 链接或图片失效"
+        - "Translation issue / 翻译问题"
+        - "Other / 其他"
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested_change
+    attributes:
+      label: "Suggested change / 建议修改"
+      description: "Describe what should be changed or added. / 请描述应该如何修改或补充。"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: "Language version / 语言版本"
+      options:
+        - "English"
+        - "Simplified Chinese / 简体中文"
+        - "Both / 两者都有"
+        - "Not sure / 不确定"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional context / 补充信息"
+      description: "Add any extra context that may help us update the docs. / 补充任何有助于更新文档的信息。"

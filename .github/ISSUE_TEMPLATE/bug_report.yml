@@ -1,0 +1,96 @@
+name: "Bug Report / 问题反馈"
+description: "Report a reproducible issue in Tracetto or its documentation. / 反馈 Tracetto 或文档中的可复现问题。"
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Tracetto.
+
+        感谢你帮助改进 Tracetto。
+
+        Please do not publicly upload private trace files unless they have been sanitized.
+
+        请不要公开上传未经脱敏的私有 trace 文件。
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Problem description / 问题描述"
+      description: "Describe what happened. / 请描述发生了什么。"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce / 复现步骤"
+      description: "List the steps needed to reproduce the issue. / 请列出复现问题所需步骤。"
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior / 期望行为"
+      description: "What did you expect to happen? / 你期望发生什么？"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: "Browser and OS / 浏览器和操作系统"
+      description: "Example: Chrome 125 on macOS 14, Edge 124 on Windows 11. / 示例：Chrome 125 on macOS 14，Edge 124 on Windows 11。"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: trace_type
+    attributes:
+      label: "Trace type / Trace 类型"
+      options:
+        - "Single-rank trace / 单 rank trace"
+        - "Multi-rank trace / 多 rank trace"
+        - "Not trace-related / 与 trace 无关"
+        - "Unknown / 不确定"
+    validations:
+      required: true
+
+  - type: input
+    id: trace_size
+    attributes:
+      label: "Trace file size and extension / Trace 文件大小和扩展名"
+      description: "Example: 120 MB .json.gz. If not trace-related, enter N/A. / 示例：120 MB .json.gz。如果与 trace 无关，请填写 N/A。"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: view
+    attributes:
+      label: "Related view / 相关视图"
+      options:
+        - "Import page / 导入页"
+        - "Timeline Overview"
+        - "Overview"
+        - "Operator View"
+        - "Kernel View"
+        - "Memory View"
+        - "Distributed View"
+        - "Call Stack"
+        - "Export"
+        - "Documentation / 文档"
+        - "Other / 其他"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional context / 补充信息"
+      description: "Screenshots, sanitized snippets, or other details are helpful. / 截图、脱敏片段或其他细节会很有帮助。"

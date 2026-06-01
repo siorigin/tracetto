@@ -1,0 +1,64 @@
+name: "Feature Request / 功能建议"
+description: "Suggest an improvement or new capability for Tracetto. / 为 Tracetto 提出改进或新能力建议。"
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your idea.
+
+        感谢你分享建议。
+
+        Please do not publicly upload private trace files unless they have been sanitized.
+
+        请不要公开上传未经脱敏的私有 trace 文件。
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: "Use case / 使用场景"
+      description: "What analysis task or workflow are you trying to complete? / 你想完成什么分析任务或工作流？"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_capability
+    attributes:
+      label: "Expected capability / 期望能力"
+      description: "Describe the feature or improvement you want. / 请描述你希望增加或改进的能力。"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_workaround
+    attributes:
+      label: "Current workaround / 当前替代方案"
+      description: "How do you handle this today? Enter N/A if there is no workaround. / 目前如何处理？如果没有替代方案，请填写 N/A。"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affected_area
+    attributes:
+      label: "Affected view or workflow / 影响的视图或流程"
+      options:
+        - "Import page / 导入页"
+        - "Timeline Overview"
+        - "Overview"
+        - "Operator View"
+        - "Kernel View"
+        - "Memory View"
+        - "Distributed View"
+        - "Call Stack"
+        - "Export"
+        - "Documentation / 文档"
+        - "Other / 其他"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional context / 补充信息"
+      description: "Screenshots, sanitized examples, or references are welcome. / 欢迎提供截图、脱敏示例或参考链接。"
