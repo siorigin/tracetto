@@ -3,7 +3,7 @@
 **语言 / Language:** 简体中文 | [English](./README.md)
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
-[![Website](https://img.shields.io/badge/try-tracetto.com-2ea44f.svg)](https://tracetto.com)
+[![Website](https://img.shields.io/badge/try-www.tracetto.com-2ea44f.svg)](https://www.tracetto.com/)
 
 Tracetto 是面向 PyTorch Profiler trace 的浏览器端分析工具，帮助算法工程师和性能工程师从一份 trace 文件快速定位 GPU 时间分布、operator 热点、kernel 行为、内存搬运和多 rank 负载不均等问题。
 
@@ -13,7 +13,7 @@ Tracetto 在浏览器内本地解析 trace 文件，无需上传数据。
 
 ## 快速入口
 
-- 在线使用：[https://tracetto.com](https://tracetto.com)
+- 在线使用：[https://www.tracetto.com/](https://www.tracetto.com/)
 - 快速上手：[zh-CN/quickstart.md](./zh-CN/quickstart.md)
 - 参考手册：[zh-CN/reference.md](./zh-CN/reference.md)
 
@@ -47,7 +47,7 @@ Tracetto 支持 PyTorch Profiler 导出的 Chrome Trace 格式，包括：
 ## 典型分析流程
 
 1. 生成 PyTorch Profiler trace。
-2. 打开 [tracetto.com](https://tracetto.com)，导入一个或多个 trace 文件。
+2. 打开 [www.tracetto.com](https://www.tracetto.com/)，导入一个或多个 trace 文件。
 3. 使用 `Timeline Overview` 选择要分析的阶段或模块。
 4. 在 `Overview` 查看 compute / non-compute / idle 时间分布。
 5. 进入 `Operator View`、`Kernel View`、`Memory View` 或 `Distributed View` 下钻。

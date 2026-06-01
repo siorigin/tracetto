@@ -16,7 +16,7 @@ Tracetto 在浏览器端本地解析 trace，无需上传数据，安全快速�
 
 ![Tracetto 浏览器导入页](./images/home.png)
 
-_Tracetto 浏览器导入页：访问 [https://tracetto.com](https://tracetto.com)，选择 trace 文件即可在浏览器内本地解析。_
+_Tracetto 浏览器导入页：访问 [https://www.tracetto.com/](https://www.tracetto.com/)，选择 trace 文件即可在浏览器内本地解析。_
 
 > **本手册的目标**：让你在 10 分钟内完成第一次端到端分析。各视图的字段定义、所有交互细节、典型场景与常见问题，请见 [reference.md](./reference.md)。
 >
@@ -122,7 +122,7 @@ python -m sglang.bench_serving \
 
 ### 1.2 访问 Tracetto
 
-最终用户无需本地启动站点，直接访问 [https://tracetto.com](https://tracetto.com) 即可进入导入页。
+最终用户无需本地启动站点，直接访问 [https://www.tracetto.com/](https://www.tracetto.com/) 即可进入导入页。
 
 ### 1.3 导入文件
 

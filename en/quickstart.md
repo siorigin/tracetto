@@ -16,7 +16,7 @@ Tracetto parses traces locally in the browser. No data upload is required, so an
 
 ![Tracetto browser import page](./images/home.png)
 
-_Tracetto browser import page: visit [https://tracetto.com](https://tracetto.com), pick a trace file, and parse it locally in the browser._
+_Tracetto browser import page: visit [https://www.tracetto.com/](https://www.tracetto.com/), pick a trace file, and parse it locally in the browser._
 
 > **Goal of this guide**: help you complete your first end-to-end analysis in about 10 minutes. For field definitions, full interaction details, common scenarios, and FAQ, see [reference.md](./reference.md).
 >
@@ -129,7 +129,7 @@ After collection finishes, import the generated `.trace.json` or `.trace.json.gz
 
 ### 1.2 Access Tracetto
 
-End users do not need to run the site locally. Open [https://tracetto.com](https://tracetto.com) to enter the import page.
+End users do not need to run the site locally. Open [https://www.tracetto.com/](https://www.tracetto.com/) to enter the import page.
 
 ### 1.3 Import files
 
